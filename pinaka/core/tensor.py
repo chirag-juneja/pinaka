@@ -13,7 +13,7 @@ class Tensor:
         self.dtype = self.data.dtype
 
     def zeros(self, n):
-        return Tensor(np.zeros(x))
+        return Tensor(np.zeros(n))
 
     def __repr__(self):
         return f"Tensor(data={self.data}, shape={self.shape}, dtype={self.dtype})"
