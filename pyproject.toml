@@ -1,24 +1,26 @@
 [project]
 name = "pinaka"
-version = "0.1.0"
+version = "0.1.1"
 description = "Lightweight ML Framework"
 authors = [
     {name = "Chirag Juneja",email = "chiragjuneja6@gmail.com"}
 ]
 license = {text = "MIT"}
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.14"
+packages=[{include = "pinaka"}]
 dependencies = [
+    "numpy (>=2.4.3,<3.0.0)"
 ]
 
 
 [build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.group.dev.dependencies]
-setuptools = "^80.9.0"
-wheel = "^0.45.1"
-pybind11 = "^3.0.1"
-cmake = "^4.2.1"
+pytest = "^9.0.2"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
 
