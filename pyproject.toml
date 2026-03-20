@@ -1,6 +1,6 @@
 [project]
 name = "pinaka"
-version = "0.1.1"
+version = "0.1.2"
 description = "Lightweight ML Framework"
 authors = [
     {name = "Chirag Juneja",email = "chiragjuneja6@gmail.com"}
