@@ -49,6 +49,13 @@ def test_tensor_sub_scalar(t):
     assert np.all(r.to_numpy() == np.array([0, 1, 2, 3, 4]))
 
 
+def test_tensor_matmul():
+    x = Tensor([1, 2])
+    y = Tensor([3, 4])
+    r = x @ y
+    assert (r == Tensor(11)).all()
+
+
 def test_tensor_indexing(t):
     assert t[0] == 1
 
